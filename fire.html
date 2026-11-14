@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Results Calculator</title>
+    <link rel="stylesheet" href="fire.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>STUDENT RESULTS</h1>
+        <p>Academic Performance Calculator</p>
+      </header>
+
+      <section class="summary">
+        <div class="card">
+          <p>Total Students</p>
+          <h2>05</h2>
+        </div>
+
+        <div class="card">
+          <p>Highest Score</p>
+          <h2 id="highest">0</h2>
+        </div>
+
+        <div class="card">
+          <p>Class Average</p>
+          <h2 id="average">0</h2>
+        </div>
+      </section>
+
+      <section class="results">
+        <h2>Student Score Sheet</h2>
+        <p class="instruction">
+          Enter scores below. Results calculate automatically.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>CA 1<br />/10</th>
+                <th>CA 2<br />/10</th>
+                <th>CA 3<br />/10</th>
+                <th>Exam<br />/70</th>
+                <th>Total<br />/100</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+
+            <tbody id="studentRows">
+              <tr>
+                <td><input class="name" value="Student 1" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="70" /></td>
+                <td class="total">0</td>
+                <td class="grade">F</td>
+              </tr>
+
+              <tr>
+                <td><input class="name" value="Student 2" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="70" /></td>
+                <td class="total">0</td>
+                <td class="grade">F</td>
+              </tr>
+
+              <tr>
+                <td><input class="name" value="Student 3" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="70" /></td>
+                <td class="total">0</td>
+                <td class="grade">F</td>
+              </tr>
+
+              <tr>
+                <td><input class="name" value="Student 4" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="70" /></td>
+                <td class="total">0</td>
+                <td class="grade">F</td>
+              </tr>
+
+              <tr>
+                <td><input class="name" value="Student 5" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="10" /></td>
+                <td><input class="score" type="number" min="0" max="70" /></td>
+                <td class="total">0</td>
+                <td class="grade">F</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grading">
+          <h3>GRADING SYSTEM</h3>
+          <p>A = 70–100 | B = 60–69 | C = 50–59</p>
+          <p>D = 46–49 | E = 40–45 | F = 0–39</p>
+        </div>
+
+        <p id="message">Enter your scores to calculate results.</p>
+      </section>
+
+      <footer>Student Results Calculator | HTML CSS JavaScript</footer>
+    </div>
+
+    <script src="fire.js"></script>
+  </body>
+</html>
